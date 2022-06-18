@@ -61,7 +61,7 @@ class App extends Component {
             <Route path='works/2' element={<WorkDetail2 />} />
             <Route path='works/3' element={<WorkDetail3 />} />
             <Route path='works/4' element={<WorkDetail4 />} />
-            
+
           </Routes>
         </section>
         {/* 底部 */}
