@@ -1,0 +1,28 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	modified:   package-lock.json
+#	modified:   package.json
+#	new file:   src/assets/head.jpg
+#	new file:   src/assets/test.jpg
+#	new file:   src/compoment/WorkList/index.js
+#	new file:   src/compoment/WorkList/work.module.scss
+#	modified:   src/index.css
+#	modified:   src/index.js
+#	new file:   src/pages/App.js
+#	new file:   src/pages/App.module.scss
+#	new file:   src/pages/HomePage/home.module.scss
+#	new file:   src/pages/HomePage/index.js
+#	new file:   src/pages/WorkDetail/detail.module.scss
+#	new file:   src/pages/WorkDetail/index.js
+#	new file:   src/pages/WorkPage/index.js
+#	new file:   src/pages/WorkPage/works.module.scss
+#	new file:   src/pages/logo.svg
+#	new file:   src/pages/works.json
+#	new file:   yarn.lock
+#
