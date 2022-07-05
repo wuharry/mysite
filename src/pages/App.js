@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import style from './App.module.scss';
 import {
   Link, Route, Routes,
+  HashRouter,
   useLocation,
   useNavigate,
   useParams
@@ -42,7 +43,7 @@ class App extends Component {
         {/* 頭部導航 */}
         <header className={style.Header}>
           <div className={style.navigation_lab}>
-            <Link to='/'> <div className={style.navigation_left}>navigation</div>  </Link>
+            <Link to='/'> <div className={style.navigation_left}>navigation</div></Link>
             {/* link to+'導航地址',  "/"為首頁地址  */}
             <div className={style.navigation_right}>
               <Link to='/'><p className={road.location.pathname === '/' ? style.selected : null}>Home</p></Link>
@@ -61,7 +62,6 @@ class App extends Component {
             <Route path='works/2' element={<WorkDetail2 />} />
             <Route path='works/3' element={<WorkDetail3 />} />
             <Route path='works/4' element={<WorkDetail4 />} />
-
           </Routes>
         </section>
         {/* 底部 */}
