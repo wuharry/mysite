@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import style from './App.module.scss';
 import {
   Link, Route, Routes,
-  HashRouter,
   useLocation,
   useNavigate,
   useParams
@@ -13,7 +12,7 @@ import WorkDetail from './WorkDetail';
 import WorkDetail2 from './WorkDetail2';
 import WorkDetail3 from './WorkDetail3';
 import WorkDetail4 from './WorkDetail4';
-
+import WorkDetail5 from './WorkDetail5';
 function withRouter(Component) {
   // React router v6不再支持wuthRouter所以用這個func來代替它的功能
   function ComponentWithRouterProp(props) {
@@ -43,7 +42,7 @@ class App extends Component {
         {/* 頭部導航 */}
         <header className={style.Header}>
           <div className={style.navigation_lab}>
-            <Link to='/'> <div className={style.navigation_left}>navigation</div></Link>
+            <Link to='/'> <div className={style.navigation_left}>navigation</div>  </Link>
             {/* link to+'導航地址',  "/"為首頁地址  */}
             <div className={style.navigation_right}>
               <Link to='/'><p className={road.location.pathname === '/' ? style.selected : null}>Home</p></Link>
@@ -56,12 +55,14 @@ class App extends Component {
         <section className={style.Content}>
           <Routes>
             <Route path='/' element={<HomePage />} />
+            <Route path='/personelwebsite' element={<HomePage />} />
             <Route path='/works' element={<WorkPage />} />
             {/*這邊因為沒有使用後端的技能因此不採用動態路由獲取(寫法:works/:id)*/}
             <Route path='works/1' element={<WorkDetail />} />
             <Route path='works/2' element={<WorkDetail2 />} />
             <Route path='works/3' element={<WorkDetail3 />} />
             <Route path='works/4' element={<WorkDetail4 />} />
+            <Route path='works/5' element={<WorkDetail5 />} />
           </Routes>
         </section>
         {/* 底部 */}
